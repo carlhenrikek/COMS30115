@@ -1,1 +1,399 @@
-apa
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/COMS30115/css/bootstrap.css">
+  <script src="/COMS30115/css/jquery.min.js"></script>
+  <script src="/COMS30115/css/bootstrap.min.js"></script>
+  
+  <title>COMS30115 - Computer Graphics</title>
+  <meta name="description" content="Computer Graphics third year unit at the University of Bristol 2017/18">
+
+  <link rel="stylesheet" href="/COMS30115/css/main.css">
+</head>  <link rel="canonical" href="http://localhost:4000/COMS30115/">
+  <link rel="alternate" type="application/rss+xml" title="COMS30115 - Computer Graphics" href="http://localhost:4000/COMS30115/feed.xml" />
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/COMS30115/">COMS30115 - Computer Graphics</a>
+
+
+    <nav class="site-nav">
+
+      <a href="#" class="menu-icon menu.open">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>  
+
+    <div class="trigger"><h1>Main Navigation</h1>
+
+ <ul class="menu">
+
+    
+    
+     <li><a href="/gallery/" class="page-link">Gallery</a>
+    
+    </li>
+    
+    
+     <li><a href="/misc/" class="page-link">misc</a>
+    
+    </li>
+    
+    </ul>
+
+
+     </div>  
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <article class="post-content">
+    <p>
+Welcome to the webpage of COMS30115: Computer Graphics.
+</p>
+
+<p>
+The aim of this unit is to teach you the fundamental principles of Computer Graphics. The course have a focus on rendering, which is the process of image generation. We will look at several different techniques suitable for different applications.
+</p>
+
+<p>
+The course work consists of two programming assignments that will be submitted together with a short report. You will work on and submit the assignments in groups of <b>two</b>. The assignments covers different rendering techniques, raytracing and rasterization. The implementations will be done in C/C++ directly from scratch without relying on APIs such as OpenGL or DirectX. The two courseworks make up 100% of the mark for this unit.
+</p>
+
+<div id="outline-container-orgd8e5217" class="outline-2">
+<h2 id="orgd8e5217">Practical</h2>
+<div class="outline-text-2" id="text-orgd8e5217">
+<p>
+The key thing in Computer Graphics is cheating and as anyone breaking systems will tell you the best way to learn this is by doing. Therefore this unit is heavily focused on the practical part, we will discuss the general things during the lectures and then you go off and explore them during the labs. Each assignment is consists of two parts, the first part you are given a very detailed description for. Completing this will take you to a pass grade. To get the remaining points you can do pretty much whatever you want, explore the topics that you've learnt. Graphics is a very creative topic, the rules are simple, if it looks good its correct, so play around and create something of your own.
+</p>
+</div>
+
+
+<div id="outline-container-org2869df6" class="outline-3">
+<h3 id="org2869df6">Starfield</h3>
+<div class="outline-text-3" id="text-org2869df6">
+<dl id="" class="wp-caption alignleft" style="max-width: 300px">
+
+<dt><a href=""><img class="" src="/bin/stars.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+
+<p>
+In this first lab in the course the aim is to get everyone familarised with the lab environment to build a simple rendering pipeline. The graphics we will create will not be that impressive but the techiniques you are going to use are essential for the rest of the course. After you have finished this lab you should understand,
+</p>
+
+<ul class="org-ul">
+<li>Image representation</li>
+<li>Rendering pipeline with double buffering</li>
+<li>Linear and Bi-Linear Interpolation</li>
+<li>Pinhole camera and 3D-projection</li>
+<li>Point Clipping</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org35202a9" class="outline-3">
+<h3 id="org35202a9">Raytracer</h3>
+<div class="outline-text-3" id="text-org35202a9">
+<dl id="" class="wp-caption alignleft" style="max-width: 300px">
+
+<dt><a href=""><img class="" src="/bin/raytracer.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+
+<p>
+In this first lab in the course the aim is to get everyone familarised with the lab environment to build a simple rendering pipeline. The graphics we will create will not be that impressive but the techiniques you are going to use are essential for the rest of the course. After you have finished this lab you should understand,
+</p>
+
+<ul class="org-ul">
+<li>Image representation</li>
+<li>Rendering pipeline with double buffering</li>
+<li>Linear and Bi-Linear Interpolation</li>
+<li>Pinhole camera and 3D-projection</li>
+<li>Point Clipping</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org257eed6" class="outline-3">
+<h3 id="org257eed6">Rasteriser</h3>
+<div class="outline-text-3" id="text-org257eed6">
+<dl id="" class="wp-caption alignleft" style="max-width: 300px">
+
+<dt><a href=""><img class="" src="/bin/rasteriser.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+
+<p>
+Raytracing is the simplest way of computing a 2D image of a 3D scene. It can be used to simulate all kinds phenomena and we have only barely scratched the surface. Its only disadvantage is the speed. It is therefore typically not used for real-time visualization. For those scenarios another method called rasterization is often used. Although rasterization is typically faster than raytracing it is not as easy to implement and it cannot be used to simulate all illumination phenomena. It is for instance very difficult to simulate multiple bounces of light with it. In this lab you will implement a rasterizer. After you have done this lab you should be comfortable with,
+</p>
+
+<ul class="org-ul">
+<li>Perspective projection of 3D points by a pinhole camera.</li>
+<li>Drawing 3D objects modeled by triangular surfaces by first projecting the vertices of the triangles to the 2D image plane.</li>
+<li>Drawing the edges of each triangle as lines in 2D, using linear interpolation.</li>
+<li>A depth buffer to check visibility for each pixel.</li>
+<li>Interpolation of arbitrary quantities across the triangle, although you will focus on light.</li>
+<li>Per vertex and per pixel illumination, implemented by vertex and pixel shaders.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1620a80" class="outline-2">
+<h2 id="org1620a80">Lectures</h2>
+<div class="outline-text-2" id="text-org1620a80">
+<p>
+The lectures will follow the coursework but we will also discuss other things. Try to take the lectures more as a discussion/introduction than a description of the material. It is intended to make you think and reflect about computer graphics then you are supposed to be able to go off and make the final step from the abstract idea to actual implementations.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="striped table-striped">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Nr</th>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-left">Material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">22/1</td>
+<td class="org-left">Introduction</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">26/1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">29/1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">2/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">5/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">9/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">12/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">16/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">19/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">23/2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">5/3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">9/3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">12/3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-left">16/3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-left">19/3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-left">23/3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">17</td>
+<td class="org-left">16/4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">18</td>
+<td class="org-left">20/4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">19</td>
+<td class="org-left">23/4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">20</td>
+<td class="org-left">27/4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">21</td>
+<td class="org-left">30/4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">22</td>
+<td class="org-left">4/5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org7d0b458" class="outline-2">
+<h2 id="org7d0b458">Material</h2>
+<div class="outline-text-2" id="text-org7d0b458">
+<p>
+<a href="https://en.wikipedia.org/wiki/Internets">The Internets</a> is filled to the brim with material about computer graphics. If you are capable of filtering the good from the bad there are some exceptional resources. Below are some links that I think are really useful to explain some of the concepts that we have work on in this course.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.scratchapixel.com/">Scratchapixel</a> - an online textbook that aims to cover most of computer graphics.</li>
+<li><a href="http://immersivemath.com/ila/index.html">Immersive Linear Algebra</a> - an online interactive text book explaining linear algebra. The authors are all active computer graphics researchers so it will have a slight bias towards this.</li>
+<li><a href="http://www.realtimerendering.com/">Realtime Rendering</a> - the website of the book Realtime Rendering, the book is slightly outdated (still very good though) but the website is continously updated with resources that are useful.</li>
+<li><a href="https://fgiesen.wordpress.com/">The ryg blog</a> - when I grow up I'll be an inventor - Ryg have been one of the top demoscene coders for close to a decade, creating most of the work of the group <a href="http://www.farbrausch.de/">Farbrauch</a>. Not only being good at programming graphics he is also good at explaining stuff. On his blog there are lots of interesting things but expecially read his text on the graphics pipeline.</li>
+</ul>
+</div>
+</div>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+<!--     <h2 class="footer-heading">COMS30115 - Computer Graphics</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li><strong>COMS30115 - Computer Graphics</strong></li>
+
+          <li><a href="mailto:carlhenrik.ek@bristol.ac.uk">carlhenrik.ek@bristol.ac.uk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+         <p class="text">
+Computer Graphics third year unit at the University of Bristol 2017/18 
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>
