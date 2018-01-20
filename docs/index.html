@@ -14,8 +14,8 @@
   <meta name="description" content="Computer Graphics third year unit at the University of Bristol 2017/18">
 
   <link rel="stylesheet" href="/COMS30115/css/main.css">
-</head>  <link rel="canonical" href="http://localhost:4000/COMS30115/">
-  <link rel="alternate" type="application/rss+xml" title="COMS30115 - Computer Graphics" href="http://localhost:4000/COMS30115/feed.xml" />
+</head>  <link rel="canonical" href="https://carlhenrikek.github.io/COMS30115/">
+  <link rel="alternate" type="application/rss+xml" title="COMS30115 - Computer Graphics" href="https://carlhenrikek.github.io/COMS30115/feed.xml" />
 <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
 
@@ -50,12 +50,7 @@
 
     
     
-     <li><a href="/gallery/" class="page-link">Gallery</a>
-    
-    </li>
-    
-    
-     <li><a href="/misc/" class="page-link">misc</a>
+     <li><a href="gallery/" class="page-link">Gallery</a>
     
     </li>
     
@@ -84,98 +79,12 @@ Welcome to the webpage of COMS30115: Computer Graphics.
 </p>
 
 <p>
-The aim of this unit is to teach you the fundamental principles of Computer Graphics. The course have a focus on rendering, which is the process of image generation. We will look at several different techniques suitable for different applications.
+The aim of this unit is to teach you the fundamental principles of Computer Graphics. The course have a focus on rendering, which is the process of image generation. We will look at several different techniques suitable for both realtime graphics and high-fidelity rendering. The course work consists of two programming assignments that will be submitted together with a short report. You will work on and submit the assignments in groups of <b>two</b>. The assignments covers different rendering techniques, raytracing and rasterization. The implementations will be done in C/C++ directly from scratch without relying on APIs such as OpenGL or DirectX. The two courseworks make up 100% of the mark for this unit.
 </p>
 
 <p>
-The course work consists of two programming assignments that will be submitted together with a short report. You will work on and submit the assignments in groups of <b>two</b>. The assignments covers different rendering techniques, raytracing and rasterization. The implementations will be done in C/C++ directly from scratch without relying on APIs such as OpenGL or DirectX. The two courseworks make up 100% of the mark for this unit.
+To get the material for the unit, lecture-notes, labs, code etc. clone the following repository <a href="https://github.com/carlhenrikek/COMS30115">GitHub</a>. There is a private subreddit associated with the unit <a href="https://www.reddit.com/r/coms30115/">reddit</a> where you can discuss the material. I will try to be as active as possible on the forum but the idea is that it is not supposed to be one way communication but you should try to help each other as well.
 </p>
-
-<div id="outline-container-orgd8e5217" class="outline-2">
-<h2 id="orgd8e5217">Practical</h2>
-<div class="outline-text-2" id="text-orgd8e5217">
-<p>
-The key thing in Computer Graphics is cheating and as anyone breaking systems will tell you the best way to learn this is by doing. Therefore this unit is heavily focused on the practical part, we will discuss the general things during the lectures and then you go off and explore them during the labs. Each assignment is consists of two parts, the first part you are given a very detailed description for. Completing this will take you to a pass grade. To get the remaining points you can do pretty much whatever you want, explore the topics that you've learnt. Graphics is a very creative topic, the rules are simple, if it looks good its correct, so play around and create something of your own.
-</p>
-</div>
-
-
-<div id="outline-container-org2869df6" class="outline-3">
-<h3 id="org2869df6">Starfield</h3>
-<div class="outline-text-3" id="text-org2869df6">
-<dl id="" class="wp-caption alignleft" style="max-width: 300px">
-
-<dt><a href=""><img class="" src="/bin/stars.png" alt="" /></a></dt>
-
-<dd></dd>
-</dl>
-
-
-<p>
-In this first lab in the course the aim is to get everyone familarised with the lab environment to build a simple rendering pipeline. The graphics we will create will not be that impressive but the techiniques you are going to use are essential for the rest of the course. After you have finished this lab you should understand,
-</p>
-
-<ul class="org-ul">
-<li>Image representation</li>
-<li>Rendering pipeline with double buffering</li>
-<li>Linear and Bi-Linear Interpolation</li>
-<li>Pinhole camera and 3D-projection</li>
-<li>Point Clipping</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org35202a9" class="outline-3">
-<h3 id="org35202a9">Raytracer</h3>
-<div class="outline-text-3" id="text-org35202a9">
-<dl id="" class="wp-caption alignleft" style="max-width: 300px">
-
-<dt><a href=""><img class="" src="/bin/raytracer.png" alt="" /></a></dt>
-
-<dd></dd>
-</dl>
-
-
-<p>
-In this first lab in the course the aim is to get everyone familarised with the lab environment to build a simple rendering pipeline. The graphics we will create will not be that impressive but the techiniques you are going to use are essential for the rest of the course. After you have finished this lab you should understand,
-</p>
-
-<ul class="org-ul">
-<li>Image representation</li>
-<li>Rendering pipeline with double buffering</li>
-<li>Linear and Bi-Linear Interpolation</li>
-<li>Pinhole camera and 3D-projection</li>
-<li>Point Clipping</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org257eed6" class="outline-3">
-<h3 id="org257eed6">Rasteriser</h3>
-<div class="outline-text-3" id="text-org257eed6">
-<dl id="" class="wp-caption alignleft" style="max-width: 300px">
-
-<dt><a href=""><img class="" src="/bin/rasteriser.png" alt="" /></a></dt>
-
-<dd></dd>
-</dl>
-
-
-<p>
-Raytracing is the simplest way of computing a 2D image of a 3D scene. It can be used to simulate all kinds phenomena and we have only barely scratched the surface. Its only disadvantage is the speed. It is therefore typically not used for real-time visualization. For those scenarios another method called rasterization is often used. Although rasterization is typically faster than raytracing it is not as easy to implement and it cannot be used to simulate all illumination phenomena. It is for instance very difficult to simulate multiple bounces of light with it. In this lab you will implement a rasterizer. After you have done this lab you should be comfortable with,
-</p>
-
-<ul class="org-ul">
-<li>Perspective projection of 3D points by a pinhole camera.</li>
-<li>Drawing 3D objects modeled by triangular surfaces by first projecting the vertices of the triangles to the 2D image plane.</li>
-<li>Drawing the edges of each triangle as lines in 2D, using linear interpolation.</li>
-<li>A depth buffer to check visibility for each pixel.</li>
-<li>Interpolation of arbitrary quantities across the triangle, although you will focus on light.</li>
-<li>Per vertex and per pixel illumination, implemented by vertex and pixel shaders.</li>
-</ul>
-</div>
-</div>
-</div>
 
 <div id="outline-container-org1620a80" class="outline-2">
 <h2 id="org1620a80">Lectures</h2>
@@ -351,6 +260,106 @@ The lectures will follow the coursework but we will also discuss other things. T
 <li><a href="http://www.realtimerendering.com/">Realtime Rendering</a> - the website of the book Realtime Rendering, the book is slightly outdated (still very good though) but the website is continously updated with resources that are useful.</li>
 <li><a href="https://fgiesen.wordpress.com/">The ryg blog</a> - when I grow up I'll be an inventor - Ryg have been one of the top demoscene coders for close to a decade, creating most of the work of the group <a href="http://www.farbrausch.de/">Farbrauch</a>. Not only being good at programming graphics he is also good at explaining stuff. On his blog there are lots of interesting things but expecially read his text on the graphics pipeline.</li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-orgd8e5217" class="outline-2">
+<h2 id="orgd8e5217">Practical</h2>
+<div class="outline-text-2" id="text-orgd8e5217">
+<p>
+The key thing in Computer Graphics is cheating and as anyone breaking systems will tell you the best way to learn this is by doing. Therefore this unit is heavily focused on the practical part, we will discuss the general things during the lectures and then you go off and explore them during the labs. Each assignment is consists of two parts, the first part you are given a very detailed description for. Completing this will take you to a pass grade. To get the remaining points you can do pretty much whatever you want, explore the topics that you've learnt. Graphics is a very creative topic, the rules are simple, if it looks good its correct, so play around and create something of your own.
+</p>
+</div>
+
+<div id="outline-container-org2869df6" class="outline-3">
+<h3 id="org2869df6">Starfield</h3>
+<div class="outline-text-3" id="text-org2869df6">
+<dl id="" class="wp-caption alignleft" style="max-width: 300px">
+
+<dt><a href=""><img class="" src="bin/stars.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+
+<p>
+In this first lab in the course the aim is to get everyone familarised with the lab environment to build a simple rendering pipeline. The graphics we will create will not be that impressive but the techiniques you are going to use are essential for the rest of the course. After you have finished this lab you should understand,
+</p>
+
+<ul class="org-ul">
+<li>Image representation</li>
+<li>Rendering pipeline with double buffering</li>
+<li>Linear and Bi-Linear Interpolation</li>
+<li>Pinhole camera and 3D-projection</li>
+<li>Point Clipping</li>
+</ul>
+
+<p>
+<i>This lab is not part of your marked coursework but simply something to do during the first week while we get into the topic.</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org35202a9" class="outline-3">
+<h3 id="org35202a9">Raytracer</h3>
+<div class="outline-text-3" id="text-org35202a9">
+<dl id="" class="wp-caption alignleft" style="max-width: 300px">
+
+<dt><a href=""><img class="" src="bin/raytracer.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+
+<p>
+In this lab we will implement a raytracer/raycaster engine. Raytracing is the simplest way of computing a 2D image of a 3D scene. It can be used to simulate all sorts of phenomena and its fairly straight forward to implement. For the basic part of the lab we will implement a naive raycasting engine and also do shadows and simple shading. After doing this lab you should be comfortable with,
+</p>
+
+<ul class="org-ul">
+<li>Represent 3D scenes using triangular surfaces</li>
+<li>Understand how a camera works</li>
+<li>Trace rays through the scene from a camera</li>
+<li>Compute ray and triangle intersections</li>
+<li>Simulation of light sources</li>
+<li>Reflection of light from diffues and specular surfaces</li>
+</ul>
+
+<p>
+<i>This lab makes up 50% of your mark for the unit.</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org257eed6" class="outline-3">
+<h3 id="org257eed6">Rasteriser</h3>
+<div class="outline-text-3" id="text-org257eed6">
+<dl id="" class="wp-caption alignleft" style="max-width: 300px">
+
+<dt><a href=""><img class="" src="bin/rasteriser.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+
+<p>
+Raytracing really has very little to do with computers, we simply naively try to implement a simple physical model of light and generate images from this. Due to this it is terribly slow and therefore typically not used for real-time visualization. For those scenarios another method called rasterization is often used instead. Although rasterization is typically faster than raytracing it is not as easy to implement and it cannot be used to simulate all illumination phenomena. It is for instance very difficult to simulate multiple bounces of light with it. In this lab you will implement a rasterizer. After you have done this lab you should be comfortable with,
+</p>
+
+<ul class="org-ul">
+<li>Perspective projection of 3D points by a pinhole camera.</li>
+<li>Drawing 3D objects modeled by triangular surfaces by first projecting the vertices of the triangles to the 2D image plane.</li>
+<li>Drawing the edges of each triangle as lines in 2D, using linear interpolation.</li>
+<li>A depth buffer to check visibility for each pixel.</li>
+<li>Interpolation of arbitrary quantities across the triangle, although you will focus on light.</li>
+<li><p>
+Per vertex and per pixel illumination, implemented by vertex and pixel shaders.
+</p>
+
+<p>
+<i>This lab makes up 50% of your mark for the unit.</i>
+</p></li>
+</ul>
+</div>
 </div>
 </div>
 

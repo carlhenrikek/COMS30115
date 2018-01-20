@@ -4,24 +4,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/feed.xml</loc>
+      <loc>https://carlhenrikek.github.io/feed.xml</loc>
       
-        <lastmod>2018-01-19T17:58:12+00:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/</loc>
-      
-        <lastmod>2018-01-19T17:58:12+00:00</lastmod>
+        <lastmod>2018-01-20T14:16:11+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -34,9 +19,39 @@
   
     
     <url>
-      <loc>http://localhost:4000/css/main.css</loc>
+      <loc>https://carlhenrikek.github.io/gallery/</loc>
       
-        <lastmod>2018-01-19T17:58:12+00:00</lastmod>
+        <lastmod>2018-01-20T14:16:11+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://carlhenrikek.github.io/</loc>
+      
+        <lastmod>2018-01-20T14:16:11+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://carlhenrikek.github.io/css/main.css</loc>
+      
+        <lastmod>2018-01-20T14:16:11+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

@@ -3,10 +3,10 @@
   <channel>
     <title>COMS30115 - Computer Graphics</title>
     <description>Computer Graphics third year unit at the University of Bristol 2017/18</description>
-    <link>http://localhost:4000/COMS30115/</link>
-    <atom:link href="http://localhost:4000/COMS30115/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Jan 2018 17:58:12 +0000</pubDate>
-    <lastBuildDate>Fri, 19 Jan 2018 17:58:12 +0000</lastBuildDate>
+    <link>https://carlhenrikek.github.io/COMS30115/</link>
+    <atom:link href="https://carlhenrikek.github.io/COMS30115/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 20 Jan 2018 14:16:11 +0000</pubDate>
+    <lastBuildDate>Sat, 20 Jan 2018 14:16:11 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
   </channel>
