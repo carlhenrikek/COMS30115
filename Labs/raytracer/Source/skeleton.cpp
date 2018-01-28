@@ -64,6 +64,6 @@ void Update()
   float dt = float(t2-t);
   t = t2;
   /*Good idea to remove this*/
-  //std::cout << "Render time: " << dt << " ms." << std::endl;
+  std::cout << "Render time: " << dt << " ms." << std::endl;
   /* Update variables*/
 }
