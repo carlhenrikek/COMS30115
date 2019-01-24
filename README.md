@@ -1,3 +1,3 @@
 # COMS30115
 
-This is the repository for the Computer Graphics unit COMS30115 at the University of Bristol.
+This is the repository for the Computer Graphics unit COMS30115 at the University of Bristol for the year 2017/18
