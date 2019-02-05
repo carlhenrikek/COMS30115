@@ -11,6 +11,7 @@ using glm::mat3;
 using glm::vec4;
 using glm::mat4;
 
+SDL_Event event;
 
 #define SCREEN_WIDTH 320
 #define SCREEN_HEIGHT 256
@@ -19,17 +20,16 @@ using glm::mat4;
 /* ----------------------------------------------------------------------------*/
 /* FUNCTIONS                                                                   */
 
-void Update();
+bool Update();
 void Draw(screen* screen);
 
 int main( int argc, char* argv[] )
 {
   
   screen *screen = InitializeSDL( SCREEN_WIDTH, SCREEN_HEIGHT, FULLSCREEN_MODE );
-  
-  while( NoQuitMessageSDL() )
+
+  while ( Update())
     {
-      Update();
       Draw(screen);
       SDL_Renderframe(screen);
     }
@@ -56,14 +56,44 @@ void Draw(screen* screen)
 }
 
 /*Place updates of parameters here*/
-void Update()
+bool Update()
 {
   static int t = SDL_GetTicks();
   /* Compute frame time */
   int t2 = SDL_GetTicks();
   float dt = float(t2-t);
   t = t2;
-  /*Good idea to remove this*/
-  std::cout << "Render time: " << dt << " ms." << std::endl;
-  /* Update variables*/
+
+  SDL_Event e;
+  while(SDL_PollEvent(&e))
+    {
+      if (e.type == SDL_QUIT)
+	{
+	  return false;
+	}
+      else
+	if (e.type == SDL_KEYDOWN)
+	  {
+	    int key_code = e.key.keysym.sym;
+	    switch(key_code)
+	      {
+	      case SDLK_UP:
+		/* Move camera forward */
+		break;
+	      case SDLK_DOWN:
+		/* Move camera backwards */
+		break;
+	      case SDLK_LEFT:
+		/* Move camera left */
+		break;
+	      case SDLK_RIGHT:
+		/* Move camera right */
+		break;
+	      case SDLK_ESCAPE:
+		/* Move camera quit */
+		return false;
+	      }
+	  }  
+    }
+  return true;
 }

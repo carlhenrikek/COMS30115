@@ -16,7 +16,6 @@ typedef struct{
 } screen;
 
 screen* InitializeSDL( int width, int height, bool fullscreen = false );
-bool NoQuitMessageSDL();
 void PutPixelSDL( screen *s, int x, int y, glm::vec3 color );
 void SDL_Renderframe(screen *s);
 void KillSDL(screen* s);
@@ -126,25 +125,6 @@ screen* InitializeSDL(int width,int height, bool fullscreen)
   return s;
 }
 
-bool NoQuitMessageSDL()
-{
-  SDL_Event e;
-  while( SDL_PollEvent(&e) )
-    {
-      if( e.type == SDL_QUIT )
-	{
-	  return false;
-	}
-      if( e.type == SDL_KEYDOWN )
-	{
-	  if( e.key.keysym.sym == SDLK_ESCAPE)
-	    {
-	      return false;
-	    }
-	}
-    }
-  return true;
-}
 
 void PutPixelSDL(screen* s, int x, int y, glm::vec3 colour)
 {
