@@ -71,6 +71,26 @@ void SDL_Renderframe(screen* s)
 
 screen* InitializeSDL(int width,int height, bool fullscreen)
 {
+  SDL_version compiled;
+  SDL_VERSION(&compiled);
+  if(compiled.major < 2)
+    {
+      std::cout << "Could not initialise SDL: Requires SDL2 headers (current "
+                << (int) compiled.major <<  "." << (int) compiled.minor
+		<< ")" << std::endl;
+      exit(1);
+    }
+
+  SDL_version linked;
+  SDL_GetVersion(&linked);
+  if(linked.major < 2)
+    {
+      std::cout << "Could not initialise SDL: Requires SDL2 runtime (current "
+                << (int) linked.major << "." << (int) linked.minor
+		<< ")" << std::endl;
+      exit(1);
+    }
+
   if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) !=0)
     {
       std::cout << "Could not initialise SDL: "
